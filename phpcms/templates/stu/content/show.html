@@ -1,0 +1,31 @@
+{template "content","header"}
+<!--content_start-->
+<div id="content" class="content-area main">
+    <div class="main_left">
+        <h3>关于交院</h3>
+        <ul>
+            {pc:content action="category" catid="0"   num="6" }
+            {loop $data $r}
+            {if $n==5}<li><a href="/index.php?m=content&c=index&a=lists&catid=22" {if $catid==22} style="background: #FB9900; color: #fff;" {/if}>校园风采</a></li>{/if}
+            <li><a href="{$r[url]}" {if $catid==$r[catid]} id="current" {/if}>{$r[catname]}</a></li>
+            {/loop}
+            {/pc}
+        </ul>
+    </div>
+    <div class="main_right padd_bottom">
+        <div class="title5">
+            <h4>{$catnme}</h4>
+            <ul>
+                <li><a href="index.php">首页></a> {catpos($catid)}</li>
+            </ul>
+        </div>
+        <div class="xq">
+            <h2>{$title}</h2>
+            <span>发布时间：{$inputtime}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布者：{$username}</span>
+            <p>{$content}</p>
+        </div>
+    </div>
+</div>
+<!--content_end-->
+
+{template "content","footer"}

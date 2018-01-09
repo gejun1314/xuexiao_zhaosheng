@@ -1,0 +1,41 @@
+{template "content","header"}
+<style>
+    body{background: #e8e8e8;}
+</style>
+<!--content_start-->
+<div id="content" class="content-area main">
+    <div class="main_left">
+        <h3>关于交院</h3>
+        <ul>
+            {pc:content action="category" catid="0"   num="6" }
+            {loop $data $r}
+            {if $n==5}<li><a href="/index.php?m=content&c=index&a=lists&catid=22" {if $catid==22} style="background: #FB9900; color: #fff;" {/if}>校园风采</a></li>{/if}
+            <li><a href="{$r[url]}" {if $catid==$r[catid]} id="current" {/if}>{$r[catname]}</a></li>
+            {/loop}
+            {/pc}
+        </ul>
+    </div>
+    <div class="main_right1">
+        <div class="title5">
+            <h4>{$catname}</h4>
+            <ul>
+                <li><a href="index.php">首页 > </a>  {catpos($catid)}</li>
+            </ul>
+        </div>
+        {pc:content action="lists" catid="$catid" num="5" page="$page"}
+        {loop $data $r}
+        <div class="news">
+            <h4><a href="{$r[url]}">{$r[title]}</a></h4>
+            <span>{date('Y年m月d日',$r[inputtime])}  录入员：{$r[username]}　　点击数：null</span>
+            <p>{$r[description]}[<a href="{$r[url]}">详情</a>]</p>
+        </div>
+        {/loop}
+        {/pc}
+    </div>
+</div>
+<div class="down">
+    {$stu_pages}
+</div>
+<!--content_end-->
+
+{template "content","footer"}

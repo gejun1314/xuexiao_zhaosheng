@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/*冬季版*/
+#header{ background:url(../../images/stuimages/winter_back_01.jpg) no-repeat center;}
+#header .content-area .left{ background:url(../../images/stuimages/winter-top_02.png) no-repeat;}
+#header .content-area .right{ background:url(../../images/stuimages/winter-top_04.png) no-repeat;}
+#nav{ background:url(../../images/stuimages/winter-nav_back_03.jpg) repeat-x;}
+#nav ul li:before{ background:url(../../images/stuimages/shu.png) no-repeat;}
+#nav ul li:hover{ background:url(../../images/stuimages/nav-xian_05.png) no-repeat 14px 43px;}
+#nav ul li a{ color:#fff;}
+#nav .search input{ border:1px solid #d1070b; color:#ccc;}
+#nav .search a{ background:url(../../images/stuimages/search_03.jpg) repeat-x; color:#fff;}
+/*图片区域*/
+.content_left .image{ background:url(../../images/stuimages/winter-img_back_03.png) no-repeat;}
+/*公示公告*/
+.content_left .notice{ background:url(../../images/stuimages/winter-notice_back_03.png) no-repeat;}
+.content_left .notice .title{ border-bottom:1px solid #FFE3E3;}
+.content_left .notice .title>span{color:#EF2E2E;}
+.content_left .notice .title>a{ background:url(../../images/stuimages/winter-more_03.jpg) no-repeat;}
+.content_left .notice ul li{ background:url(../../images/stuimages/winter-jia_03.jpg) no-repeat left center;}
+.content_left .notice ul li a{ color:#8E8D8D;}
+.content_left .notice ul li a:hover,.content_left .message ul li a:hover,.content_left .serve ul li a:hover,.content_right .video ul li a:hover{ color:#FE0303;}
+/*招生信息*/
+.content_left .message{ background:url(../../images/stuimages/winter-content_back_03.jpg) no-repeat;}
+.content_left .message .title2 h4,.content_left .serve .title2 h4{ color:#fff;}
+.content_left .message .title2 a,.content_left .serve .title2 a{ color:#C02C2C;}
+.content_left .message ul li,.content_left .serve ul li{ background:url(../../images/stuimages/winter-ju_03.jpg) no-repeat left center;}
+.content_left .message ul li a,.content_left .serve ul li a,.content_right .video ul li a{ color:#908F8F;}
+/*招生服务*/
+.content_left .serve{ background:url(../../images/stuimages/winter-content_back_03.jpg) no-repeat;}
+/*广告区域*/
+.content_left .xwrs{ background:url(../../images/stuimages/winter-guanggao_03.jpg) no-repeat;}
+/*校园风采*/
+.content_left .mien{ background:url(../../images/stuimages/winter-fengcai_back_03.jpg) no-repeat -2px 0;}
+.content_left .mien .roll ul li a{ color:#C41313;}
+.content_left .mien .roll ul li a img{ border:1px solid #FAC9C9;}
+/*宣传片区域*/
+.content_right .video{ background:url(../../images/stuimages/winter-video_back_03.jpg) no-repeat;}
+.content_right .video .title1 h4{ color:#fff;}
+.content_right .video .title3{ color:#fff;}
+.content_right .video ul li{ background:url(../../images/stuimages/winter-wen_03.jpg) no-repeat left center;}
+.content_right .video .jztx a{ background:url(../../images/stuimages/anniu_03.jpg) no-repeat;}
+.anniu1 a{ background:url(../../images/stuimages/winter-anniu_03.jpg) no-repeat;}
+.anniu2 a{ background:url(../../images/stuimages/winter-anniu_06.jpg) no-repeat;}
+.anniu3 a{ background:url(../../images/stuimages/winter-anniu_08.jpg) no-repeat;}
+
+
+/*推荐网站*/
+.link{ background:url(../../images/stuimages/winter-tujian_back_03.jpg) no-repeat;}
+.link .title4{ color:#fff;}
+.link form select{ border:1px solid #ccc;}
+#footer p{ color:#979797;}
+#footer .position .ewm{ border:1px solid #DBDBDB;}
+/*橙色*/
+.main_left h3{ background-color:#D00000;}
+.main_right1 .news h4 a:hover{ color:#D00000;}
+.main_right1 .news p a{ color:#D00000;}
+.down ul li a:hover,#current2{ background:#D00000; color:#fff;}
+.back>ul li a:hover{ color:#D00000;}
